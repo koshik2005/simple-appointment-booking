@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProCare</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header">
+            <h1>ProCare</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Signup</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Welcome Section -->
+    <section id="welcome" class="index">
+        <div class="container">
+            <div>
+                <h2>Welcome to ProCare</h2>
+                <p>
+                    Welcome to ProCare, your all-in-one platform for booking appointments with doctors across all
+                    specialties. Whether you need a general consultation, pediatric care, or expert advice from
+                    specialists like cardiologists, dermatologists, or gynecologists, ProCare connects you with
+                    certified doctors to meet your healthcare needs. <br><br>
+
+                    ProCare is built for convenience and reliability. Browse through a comprehensive list of doctors,
+                    check their availability, read reviews, and book your appointment in just a few steps. Our
+                    pre-booking feature ensures you can plan ahead and avoid unnecessary waiting times. <br><br>
+
+                    Your security and peace of mind are our top priorities. That’s why ProCare offers a fully secure
+                    payment gateway to make transactions safe, simple, and transparent. Pay for your appointments
+                    effortlessly, knowing your sensitive information is protected with advanced encryption technologies.
+                    <br><br>
+
+                    ProCare isn’t just a booking platform—it’s your trusted partner in managing healthcare efficiently.
+                    Stay on track with appointment reminders, manage your bookings from a user-friendly dashboard, and
+                    enjoy a seamless experience every step of the way. <br><br>
+
+                    Join ProCare today and experience healthcare like never before. Book your appointments, pay
+                    securely, and take charge of your health with confidence—because you deserve the best care!
+                </p>
+            </div>
+            <!-- Email and Password Section -->
+            <div class="login-box">
+                <h2>Login</h2>
+                <form action="login.php" method="POST">
+                    <div class="form-group">
+                        <label for="user-type">Select User Type</label>
+                        <select id="user-type" name="user_type">
+                            <option value="user">User</option>
+                            <option value="seller">Doctor</option>
+                            <option value="admin">Admin</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password"
+                            required="">
+                    </div>
+                    <button type="submit" class="login-btn">Login</button>
+                </form>
+                <div class="signup-link">
+                    <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2 style="display:flex; justify-content: center; align-items: center;">Specialists</h2> <br>
+        <div class="container">
+            <div class="skills-container">
+                <div class="skill-item">
+                    <i id="GP" class="fas fa-user-md icon"></i>
+                    <h3>General Physician</h3>
+                    <div class="bar"></div>
+                </div>
+                <div class="skill-item">
+                    <i id="CD" class="fas fa-heartbeat icon"></i>
+                    <h3>Cardiologists</h3>
+                    <div class="bar"></div>
+                </div>
+                <div class="skill-item">
+                    <i id="DT" class="fas fa-allergies"></i>
+                    <h3>Dermatologists</h3>
+                    <div class="bar"></div>
+                </div>
+                <div class="skill-item">
+                    <i id="OP" class="fas fa-bone icon"></i>
+                    <h3>Orthopedists</h3>
+                    <div class="bar"></div>
+                </div>
+                <div class="skill-item">
+                    <i id="GC" class="fas fa-female icon"></i>
+                    <h3>Gynecologists</h3>
+                    <div class="bar"></div>
+                </div>
+                <div class="skill-item">
+                    <i id="NG" class="fas fa-brain icon"></i>
+                    <h3>Neurologists</h3>
+                    <div class="bar"></div>
+                </div>
+                <div class="skill-item">
+                    <i id="PS" class="fas fa-user-injured"></i>
+                    <h3>Psychiatrists</h3>
+                    <div class="bar"></div>
+                </div>
+                <div class="skill-item">
+                    <i id="DT" class="fas fa-tooth"></i>
+                    <h3>Dentists</h3>
+                    <div class="bar"></div>
+                </div>
+                <div class="skill-item">
+                    <i id="ENT" class="fas fa-stethoscope"></i>
+                    <h3>ENT Specialists</h3>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer">
+            <p>&copy; 2025 ProCare. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
